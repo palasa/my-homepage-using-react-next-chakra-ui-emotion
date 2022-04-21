@@ -4,7 +4,6 @@ import { Box, Container } from "@chakra-ui/react";
 import VoxelDog from "../voxel-dog";
 import NoSsr from "../no-ssr";
 
-
 const Main = ({ children, router }) => {
   return (
     <Box as="main" pb={8}>

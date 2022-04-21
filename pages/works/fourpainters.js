@@ -7,12 +7,12 @@ import {
   ListItem,
   UnorderedList,
   Heading,
-  Center
-} from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
-import P from '../../components/paragraph'
-import Layout from '../../components/layouts/article'
+  Center,
+} from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { Title, WorkImage, Meta } from "../../components/work";
+import P from "../../components/paragraph";
+import Layout from "../../components/layouts/article";
 
 const Work = () => (
   <Layout title="The four painters">
@@ -39,7 +39,7 @@ const Work = () => (
         <ListItem>
           <Meta>Blogpost</Meta>
           <Link href="https://archive.craftz.dog/blog.odoruinu.net/2015/12/23/the-four-painters-a-video-work-created-with-deep-learning/">
-            The four painters: A Video Work Created with Deep Learning{' '}
+            The four painters: A Video Work Created with Deep Learning{" "}
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
@@ -93,7 +93,7 @@ const Work = () => (
       <WorkImage src="/images/works/the-four-painters_02.jpg" alt="walknote" />
     </Container>
   </Layout>
-)
+);
 
-export default Work
-export { getServerSideProps } from '../../components/chakra'
+export default Work;
+export { getServerSideProps } from "../../components/chakra";

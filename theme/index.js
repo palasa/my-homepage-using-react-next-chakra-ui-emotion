@@ -4,12 +4,12 @@ import { Heading } from "./components/heading";
 import { Link } from "./components/link";
 
 const styles = {
-  global: props => ({
+  global: (props) => ({
     body: {
-      bg: mode("#f0e7db", "#202023")(props)
+      bg: mode("#f0e7db", "#202023")(props),
     },
   }),
-}
+};
 
 // const components = {
 //   Heading: {
@@ -37,22 +37,23 @@ const styles = {
 //   },
 // }
 const components = {
-  Heading, Link
-}
+  Heading,
+  Link,
+};
 
 const fonts = {
-  heading: "'M PLUS Rounded 1c'"
+  heading: "'M PLUS Rounded 1c'",
   // heading: "'Monaco'"
-}
+};
 
 const colors = {
   grassTeal: "#88ccca",
-}
+};
 
 const config = {
   initialColorMode: "dark",
   useSystemColorMode: true,
-}
+};
 
 const theme = extendTheme({
   config,
@@ -60,6 +61,6 @@ const theme = extendTheme({
   components,
   colors,
   fonts,
-})
+});
 
 export default theme;

@@ -7,12 +7,12 @@ import {
   UnorderedList,
   Heading,
   Center,
-  Image
-} from '@chakra-ui/react'
-import Layout from '../../components/layouts/article'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
-import P from '../../components/paragraph'
+  Image,
+} from "@chakra-ui/react";
+import Layout from "../../components/layouts/article";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { Title, WorkImage, Meta } from "../../components/work";
+import P from "../../components/paragraph";
 
 const Work = () => (
   <Layout title="freeDBTagger">
@@ -60,7 +60,7 @@ const Work = () => (
         <ListItem>
           <Link href="https://forest.watch.impress.co.jp/article/2005/02/01/freedbtagger.html">
             <Badge mr={2}>窓の杜</Badge>
-            再生時間の組み合わせでアルバムを特定して楽曲情報を取得「freeDBTagger」{' '}
+            再生時間の組み合わせでアルバムを特定して楽曲情報を取得「freeDBTagger」{" "}
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
@@ -120,7 +120,7 @@ const Work = () => (
       <WorkImage src="/images/works/freedbtagger_01.jpg" alt="freeDBTagger" />
     </Container>
   </Layout>
-)
+);
 
-export default Work
-export { getServerSideProps } from '../../components/chakra'
+export default Work;
+export { getServerSideProps } from "../../components/chakra";
