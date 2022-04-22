@@ -9,7 +9,7 @@ function easeOutCirc(x) {
 }
 
 const VoxelDog = () => {
-  const refContainer = useRef();  // 放置模型的dom容器
+  const refContainer = useRef(); // 放置模型的dom容器
   const [loading, setLoading] = useState(true);
   const [renderer, setRenderder] = useState();
   const [_camera, setCamera] = useState();

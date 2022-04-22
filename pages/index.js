@@ -6,7 +6,7 @@ import {
   Image,
   useColorModeValue,
   Button,
-  SimpleGrid,
+  // SimpleGrid,
   Icon,
   List,
   ListItem,
@@ -17,14 +17,11 @@ import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import { BioSection, BioYear } from "../components/bio";
 import Layout from "../components/layouts/article";
-import {
-  IoLogoInstagram,
-  IoLogoGithub,
-} from "react-icons/io5";
+import { IoLogoInstagram, IoLogoGithub } from "react-icons/io5";
 import { SiSinaweibo } from "react-icons/si";
-import { GridItem } from "../components/grid-item";
-import thumbYouTube from "../public/images/links/youtube.png";
-import thumbInkdrop from "../public/images/works/inkdrop_eyecatch.png";
+// import { GridItem } from "../components/grid-item";
+// import thumbYouTube from "../public/images/links/youtube.png";
+// import thumbInkdrop from "../public/images/works/inkdrop_eyecatch.png";
 // import theme from "../theme/index"
 
 const Page = () => {
@@ -116,7 +113,7 @@ const Page = () => {
             I ♥
           </Heading>
           <Paragraph>
-            Art, Music, {" "}
+            Art, Music,{" "}
             <Link href="/" target="_blank">
               Travelling
             </Link>
@@ -205,7 +202,6 @@ const Page = () => {
               A Markdown note-taking app
             </GridItem>
           </SimpleGrid> */}
-
         </Section>
       </Container>
     </Layout>

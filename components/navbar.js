@@ -96,7 +96,10 @@ const Navbar = (props) => {
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
-                <NextLink href="https://github.com/palasa/my-homepage-using-react-next-chakra-ui-emotion.git" passHref>
+                <NextLink
+                  href="https://github.com/palasa/my-homepage-using-react-next-chakra-ui-emotion.git"
+                  passHref
+                >
                   <MenuItem as={Link}>View Source</MenuItem>
                 </NextLink>
               </MenuList>
