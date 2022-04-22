@@ -19,7 +19,7 @@ import ThemeToggleButton from "./theme-toggle-button";
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href;
-  const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900");
+  const inactiveColor = useColorModeValue("gray.200", "whiteAlpha.900");
   return (
     <NextLink href={href} passHref scroll={false}>
       <Link
@@ -87,7 +87,7 @@ const Navbar = (props) => {
                 aria-label="Options"
               ></MenuButton>
               <MenuList>
-                <NextLink href="/about" passHref>
+                <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
                 <NextLink href="/works" passHref>
@@ -96,7 +96,7 @@ const Navbar = (props) => {
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
-                <NextLink href="/posts" passHref>
+                <NextLink href="https://github.com/palasa/my-homepage-using-react-next-chakra-ui-emotion.git" passHref>
                   <MenuItem as={Link}>View Source</MenuItem>
                 </NextLink>
               </MenuList>

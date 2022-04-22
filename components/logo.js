@@ -12,15 +12,19 @@ const LogoBox = styled.span`
   line-height: 20px;
   padding: 10px;
 
+  img {
+    transition: 200ms ease;
+  }
+
   &:hover img {
-    tranform: rotate(20deg);
+    transform: rotate(20deg);
   }
 `;
 
 const Logo = () => {
   const footPrintImg = `/images/footprint${useColorModeValue("", "-dark")}.png`;
   return (
-    <Link href="/">
+    <Link href="/" scroll={false}>
       <a>
         <LogoBox>
           <Image src={footPrintImg} width={20} height={20} alt="logo" />

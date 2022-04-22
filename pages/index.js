@@ -18,11 +18,10 @@ import Paragraph from "../components/paragraph";
 import { BioSection, BioYear } from "../components/bio";
 import Layout from "../components/layouts/article";
 import {
-  IoLogoTwitter,
   IoLogoInstagram,
   IoLogoGithub,
-  IoLogoWechat,
 } from "react-icons/io5";
+import { SiSinaweibo } from "react-icons/si";
 import { GridItem } from "../components/grid-item";
 import thumbYouTube from "../public/images/links/youtube.png";
 import thumbInkdrop from "../public/images/works/inkdrop_eyecatch.png";
@@ -77,12 +76,7 @@ const Page = () => {
             with a passion for building digital services/stuff he wants. He has
             a knack for all things launching products, from planning and
             designing all the way to solving real-life problems with code. When
-            not online, he loves hanging out with his camera. Currently, he is
-            living off of his own product called{" "}
-            <NextLink href="/works/inkdrop" passHref>
-              <Link>inkdrop</Link>
-            </NextLink>
-            .
+            offline, he loves hanging out with his camera.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works" passHref>
@@ -122,12 +116,8 @@ const Page = () => {
             I ♥
           </Heading>
           <Paragraph>
-            Art, Music,{" "}
-            <Link href="https://illust.odoruinu.net/" target="_blank">
-              Idol
-            </Link>
-            , Playing Drums,{" "}
-            <Link href="https://500px.com/p/craftzdog" target="_blank">
+            Art, Music, {" "}
+            <Link href="/" target="_blank">
               Travelling
             </Link>
             , Cooking, Machine Learning
@@ -136,7 +126,7 @@ const Page = () => {
 
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            On the web
+            Contact me
           </Heading>
           <List>
             <ListItem>
@@ -164,7 +154,7 @@ const Page = () => {
                 </Button>
               </Link>
             </ListItem>
-            <ListItem>
+            {/* <ListItem>
               <Link href="https://twitter.com/parasa22877422" target="_blank">
                 <Button
                   variant="ghost"
@@ -174,13 +164,24 @@ const Page = () => {
                   @parasa
                 </Button>
               </Link>
-            </ListItem>
-            <ListItem>
-              <Link href="https://twitter.com/parasa22877422" target="_blank">
+            </ListItem> */}
+            {/* <ListItem>
+              <Link href="https://www.youtube.com/channel/UCIOsDGRCg25-4PlQnmGYabg" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
-                  leftIcon={<Icon as={IoLogoWechat} />}
+                  leftIcon={<Icon as={IoLogoYoutube} />}
+                >
+                  @parasa
+                </Button>
+              </Link>
+            </ListItem> */}
+            <ListItem>
+              <Link href="https://weibo.com/u/2001242941" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={SiSinaweibo} />}
                 >
                   @parasa
                 </Button>
@@ -188,7 +189,7 @@ const Page = () => {
             </ListItem>
           </List>
 
-          <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
             <GridItem
               href="https://www.youtube.com/devaslife"
               title="My Life"
@@ -203,7 +204,8 @@ const Page = () => {
             >
               A Markdown note-taking app
             </GridItem>
-          </SimpleGrid>
+          </SimpleGrid> */}
+
         </Section>
       </Container>
     </Layout>
