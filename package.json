@@ -4,8 +4,9 @@
   "description": "Parasa's website",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev -H 0.0.0.0",
+    "dev": "next dev -H 0.0.0.0 -p 3001",
     "build": "next build",
+    "start": "next start -p 3002",
     "prettier": "prettier --write .",
     "lint": "next lint"
   },

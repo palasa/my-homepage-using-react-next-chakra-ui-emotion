@@ -28,51 +28,48 @@ const Work = () => (
         P2P private file sharing tool with MSN Messenger integration for Windows
       </P>
       <P>
-        「MSN Messenger」と連係して特定ユーザーとP2Pフォルダ共有できる「Amembo」
+        基于Windows平台集成于MSN之上的P2P私有文件分享工具
       </P>
       <UnorderedList ml={4} my={4}>
-        <ListItem>ファイル転送がサイズ制限無く高速に出来ます。</ListItem>
-        <ListItem>複数のコンピュータ間で同時に通信が出来ます。</ListItem>
+        <ListItem>高速传输文件，并且文件大小没有限制。</ListItem>
+        <ListItem>可以在多台电脑间同时传输数据。</ListItem>
         <ListItem>
-          簡単接続機能により、面倒な接続作業を自動で行います。
+          开袋即食，无需复杂的设置。
         </ListItem>
         <ListItem>
-          一つのポート開放だけで、様々な通信が出来る強力なプロトコル。
+          使用通用的协议，只需开放一个端口即可。
         </ListItem>
         <ListItem>
-          IM機能を装備しています。会話中に写真を表示したりもできます。
+          可以进行会话聊天，也可以在会话窗口发送图片。
         </ListItem>
         <ListItem>
-          ファイル共有機能で、設定した公開フォルダを相手に見せることが出来ます。
+          共享文件功能，对方可以查看公开的文件夹中的内容。
         </ListItem>
-        <ListItem>MSN/Windowsメッセンジャーからの招待で接続できます。</ListItem>
-        <ListItem>
-          画面転送機能で、相手に自分のデスクトップを見せることが出来ます。
-        </ListItem>
+        <ListItem>集成于MSN之上</ListItem>
       </UnorderedList>
 
       <List ml={4} my={4}>
         <ListItem>
-          <Meta>Platform</Meta>
+          <Meta>平台</Meta>
           <span>Windows 2000/XP</span>
         </ListItem>
         <ListItem>
-          <Meta>Stack</Meta>
+          <Meta>技术栈</Meta>
           <span>Delphi</span>
         </ListItem>
         <ListItem>
-          <Meta>Download</Meta>
+          <Meta>下载</Meta>
           <Link href="http://odoruinu.net.s3.amazonaws.com/software/amembo/amembo0515123.zip">
             v0.5.15.123
           </Link>
         </ListItem>
         <ListItem>
-          <Meta>Last update</Meta>
+          <Meta>最后更新于</Meta>
           <span>2008/03/23</span>
         </ListItem>
         <ListItem>
-          <Meta>Manual</Meta>
-          <Link href="https://w.atwiki.jp/amembo/">使い方wiki</Link>
+          <Meta>使用指南</Meta>
+          <Link href="https://w.atwiki.jp/amembo/">https://w.atwiki.jp/amembo/</Link>
         </ListItem>
       </List>
 
@@ -80,16 +77,16 @@ const Work = () => (
         <Center>Media coverage</Center>
       </Heading>
 
-      <UnorderedList my={4}>
+      {/* <UnorderedList my={4}>
         <ListItem>
-          <Link href="https://forest.watch.impress.co.jp/article/2006/01/18/amembo.html">
+          <Link href="/">
             <Badge mr={2}>窓の杜</Badge>
             「MSN
             Messenger」と連係して特定ユーザーとP2Pフォルダ共有できる「Amembo」{" "}
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
-      </UnorderedList>
+      </UnorderedList> */}
 
       <SimpleGrid columns={2} gap={2}>
         <WorkImage src="/images/works/amembo_01.gif" alt="amembo" />
